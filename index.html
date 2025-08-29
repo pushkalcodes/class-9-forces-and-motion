@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 9 - Forces and Motion | Interactive Physics Course</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            overflow-x: hidden;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 2rem 0;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(45deg, #fff, #f0f0f0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .course-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .course-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 2rem;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .course-card:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.15);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .course-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #fff;
+        }
+
+        .course-card p {
+            opacity: 0.9;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .course-link {
+            display: inline-block;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            text-decoration: none;
+            padding: 0.8rem 2rem;
+            border-radius: 25px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.9rem;
+        }
+
+        .course-link:hover {
+            background: linear-gradient(45deg, #764ba2, #667eea);
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .footer {
+            text-align: center;
+            padding: 2rem 0;
+            opacity: 0.8;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            margin-top: 3rem;
+        }
+
+        .physics-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .course-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .container {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="physics-icon">⚛️</div>
+            <h1>Forces and Motion</h1>
+            <p>Interactive Physics Course for Class 9 - Explore the fundamental laws of motion through engaging animations and demonstrations</p>
+        </div>
+
+        <div class="course-grid">
+            <div class="course-card">
+                <h3>🔄 Newton's First Law</h3>
+                <p>Discover the concept of inertia and understand why objects at rest stay at rest and objects in motion stay in motion unless acted upon by an external force.</p>
+                <a href="9_motion optimized/1st_law.html" class="course-link">Explore First Law</a>
+            </div>
+
+            <div class="course-card">
+                <h3>⚖️ Balanced & Unbalanced Forces</h3>
+                <p>Learn the difference between balanced and unbalanced forces and how they affect the motion of objects in our everyday world.</p>
+                <a href="9_motion optimized/balanced_and_unbalanced_forces.html" class="course-link">Study Forces</a>
+            </div>
+
+            <div class="course-card">
+                <h3>📐 Newton's Second Law</h3>
+                <p>Understand the relationship between force, mass, and acceleration through the famous equation F = ma with interactive demonstrations.</p>
+                <a href="9_motion optimized/complete_second_law_cleanup.html" class="course-link">Learn Second Law</a>
+            </div>
+
+            <div class="course-card">
+                <h3>🧮 Mathematical Derivations</h3>
+                <p>Dive deep into the mathematical foundations of motion with step-by-step derivations and explanations of key physics equations.</p>
+                <a href="9_motion optimized/derivation_with_cleanup.html" class="course-link">View Derivations</a>
+            </div>
+
+            <div class="course-card">
+                <h3>⚡ Inertia and Mass</h3>
+                <p>Explore the concepts of inertia and mass, understanding how they relate to an object's resistance to changes in motion.</p>
+                <a href="9_motion optimized/inertia and mass.html" class="course-link">Study Inertia</a>
+            </div>
+
+            <div class="course-card">
+                <h3>↔️ Newton's Third Law</h3>
+                <p>Discover action-reaction pairs and learn why for every action there is an equal and opposite reaction in the universe.</p>
+                <a href="9_motion optimized/third-law-cleaned.html" class="course-link">Explore Third Law</a>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>© 2024 Calance Education - Interactive Physics Learning</p>
+            <p>Navigate through each topic to build a comprehensive understanding of forces and motion</p>
+        </div>
+    </div>
+
+    <script>
+        // Add some subtle animations on page load
+        window.addEventListener('load', () => {
+            const cards = document.querySelectorAll('.course-card');
+            cards.forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(30px)';
+                
+                setTimeout(() => {
+                    card.style.transition = 'all 0.6s ease';
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, index * 100);
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+{
+  "version": 2,
+  "public": true,
+  "builds": [
+    {
+      "src": "**/*.html",
+      "use": "@vercel/static"
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/1st-law",
+      "destination": "/9_motion optimized/1st_law.html"
+    },
+    {
+      "source": "/balanced-forces",
+      "destination": "/9_motion optimized/balanced_and_unbalanced_forces.html"
+    },
+    {
+      "source": "/second-law",
+      "destination": "/9_motion optimized/complete_second_law_cleanup.html"
+    },
+    {
+      "source": "/derivations",
+      "destination": "/9_motion optimized/derivation_with_cleanup.html"
+    },
+    {
+      "source": "/inertia",
+      "destination": "/9_motion optimized/inertia and mass.html"
+    },
+    {
+      "source": "/third-law",
+      "destination": "/9_motion optimized/third-law-cleaned.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
+        }
+      ]
+    },
+    {
+      "source": "/9_motion optimized/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    }
+  ]
+}

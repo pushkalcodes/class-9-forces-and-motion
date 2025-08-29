@@ -1,0 +1,24 @@
+{
+  "name": "class-9-forces-and-motion",
+  "version": "1.0.0",
+  "description": "Interactive physics course content for Class 9 - Forces and Motion",
+  "main": "index.html",
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "echo 'Static site, no build needed'",
+    "start": "vercel dev"
+  },
+  "keywords": [
+    "physics",
+    "education",
+    "class-9",
+    "forces",
+    "motion",
+    "newton-laws"
+  ],
+  "author": "Calance Education",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14"
+  }
+}
